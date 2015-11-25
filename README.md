@@ -120,13 +120,13 @@ I use somewhere around ~24AWG magnet wire to act as the coil to produce the elec
 ### [100mAh 3.7V LiPo battery](http://amzn.to/1S3h69E) (the powah)
 A small 100mAh 3.7V lipo battery powers our contraption. For the credit card size version (not shown here), I use a battery from [PowerStream](http://www.powerstream.com/thin-lithium-ion.htm).
 
-#### [100uF Capacitor](http://amzn.to/1MAONOc)
+#### [100µF Capacitor](http://amzn.to/1MAONOc)
 Keep enough energy in this capacitor to provide the electromagnet with power when we need it, otherwise it will pull too much current and reset the microcontroller. This is the capacitor kit I use as it has all the standard values I'd need.
 
 #### [LED](http://amzn.to/1Hl3y8Z)
 To signal to us when we transmit information. I use this LED kit as it has a nice variety of LEDs.
 
-#### [100Ohm Resistor](http://amzn.to/1IeCMtP)
+#### [100Ω Resistor](http://amzn.to/1IeCMtP)
 Don't burn out the LED.
 
 #### [Momentary Switch](http://amzn.to/1Hl3R3T)
