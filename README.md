@@ -1,14 +1,14 @@
 # [MagSpoof](http://samy.pl/magspoof/) - credit card/magstripe spoofer
 * Allows you to store all of your credit cards and magstripes in one device
 * Works on traditional magstripe readers **wirelessly** (no NFC/RFID required)
-* Can **disable** Chip-and-PIN (code not included)
+* Can **disable** Chip-and-PIN
 * Correctly **predicts** Amex credit card numbers + expirations from previous card number (code not included)
 * Supports all three magnetic stripe tracks, and even supports Track 1+2 simultaneously
 * Easy to build using Arduino or other common parts
 
 **[MagSpoof](http://samy.pl/magspoof)** is a device that can spoof/emulate any magnetic stripe or credit card. It can work "wirelessly", even on **standard magstripe/credit card readers**, by generating a strong electromagnetic field that emulates a traditional magnetic stripe card.
 
-**Note:** MagSpoof does **not** enable you to use credit cards that you are not legally authorized to use. The Chip-and-PIN and Amex information is **not** implemented and using MagSpoof requires you to have/own the magstripes that you wish to emulate. Simply having a credit card number and expiration is not enough to perform transactions. MagSpoof **does** allow you to perform research in other areas of magstripes, microcontrollers, and electromagnetism, as well as learn about and create your own devices similar to other existing, commercial technologies such as <a href="http://www.samsung.com/us/support/answer/ANS00043865/997410383/">Samsung MST</a> and <a href="https://onlycoin.com/">Coin</a>.</p>
+**Note:** MagSpoof does **not** enable you to use credit cards that you are not legally authorized to use. The Amex information is **not** implemented and using MagSpoof requires you to have/own the magstripes that you wish to emulate. Simply having a credit card number and expiration is not enough to perform transactions. MagSpoof **does** allow you to perform research in other areas of magstripes, microcontrollers, and electromagnetism, as well as learn about and create your own devices similar to other existing, commercial technologies such as <a href="http://www.samsung.com/us/support/answer/ANS00043865/997410383/">Samsung MST</a> and <a href="https://onlycoin.com/">Coin</a>.</p>
 
 
 [![Visualizing magstripe data](http://samy.pl/magspoof/meter-small2.gif)](http://samy.pl/magspoof/meter-small2.gif)
@@ -67,7 +67,7 @@ I found that by emulating a card with MagSpoof, if I send Track 1 one way, and t
 
 Additionally, if you're using a Chip card with Coin, you **still** need to bring your actual credit card to dip, however because MagSpoof can disable Chip-and-PIN (see below), it does **not** require you to bring your card with you.
 
-I've removed the Chip-and-PIN disabling functionality from MagSpoof.
+The Chip-and-PIN disabling functionality has been implemented.
 
 -----
 
