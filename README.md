@@ -32,7 +32,7 @@ MagSpoof can be used as a traditional credit card and simply store all of your c
 
 Magnetic stripes (magstripes) are in fact magnetic. What's so cool about magstripes is that while the magnetic strips inside are weak, they're still strong enough to attract small ferrous particles and wide enough that we can **fully extract all data from a magstripe or credit card with the naked eye**. 
 
-In the video, I actually dip my credit card into a bag of iron oxide. The magnetic elements in the magstripe attract the iron oxide and after pulling it out, you can actually see each bit in the tracks. Magnetic strips can have up to three tracks, however credit cards only have two tracks (Tracks 1 and 2). Track 2 has less bits per inch so it's easier to see. Let's take a look:
+In the video, I actually dip my credit card into a bag of iron oxide. The magnetic elements in the magstripe attract the iron oxide and after pulling it out, you can actually see each bit in the tracks. [Financial cards](https://en.wikipedia.org/wiki/Magnetic_stripe_card#Financial_cards) with magnetic strips can have up to three tracks, however credit cards only have two tracks (Tracks 1 and 2). Track 2 stores fewer bits than Track 1, so it has a lower linear density (bits per inch).  This makes Track 2 much easier to see. Let's take a look:
 
 [![Credit card magnetic stripe](http://samy.pl/magspoof/mag1.png)](http://samy.pl/magspoof/mag1.png)
 
