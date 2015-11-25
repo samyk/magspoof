@@ -67,7 +67,7 @@ I found that by emulating a card with MagSpoof, if I send Track 1 one way, and t
 
 Additionally, if you're using a Chip card with Coin, you **still** need to bring your actual credit card to dip, however because MagSpoof can disable Chip-and-PIN (see below), it does **not** require you to bring your card with you.
 
-The Chip-and-PIN disabling functionality has been implemented.
+The Chip-and-PIN disabling functionality has been implemented, albeit not tested.
 
 -----
 
