@@ -32,7 +32,7 @@ MagSpoof can be used as a traditional credit card and simply store all of your c
 
 Magnetic stripes (magstripes) are in fact magnetic. What's so cool about magstripes is that while the magnetic strips inside are weak, they're still strong enough to attract small ferrous particles and wide enough that we can **fully extract all data from a magstripe or credit card with the naked eye**. 
 
-In the video, I actually dip my credit card into a bag of iron oxide. The magnetic elements in the magstripe attract the iron oxide and after pulling it out, you can actually see each bit in the tracks. Magnetic strips can have up to three tracks, however credit cards only have two tracks (Tracks 1 and 2). Track 2 has less bits per inch so it's easier to see. Let's take a look:
+In the video, I actually dip my credit card into a bag of iron oxide. The magnetic elements in the magstripe attract the iron oxide and after pulling it out, you can actually see each bit in the tracks. [Financial cards](https://en.wikipedia.org/wiki/Magnetic_stripe_card#Financial_cards) with magnetic strips can have up to three tracks, however credit cards only have two tracks (Tracks 1 and 2). Track 2 stores fewer bits than Track 1, so it has a lower linear density (bits per inch).  This makes Track 2 much easier to see. Let's take a look:
 
 [![Credit card magnetic stripe](http://samy.pl/magspoof/mag1.png)](http://samy.pl/magspoof/mag1.png)
 
@@ -120,13 +120,13 @@ I use somewhere around ~24AWG magnet wire to act as the coil to produce the elec
 ### [100mAh 3.7V LiPo battery](http://amzn.to/1S3h69E) (the powah)
 A small 100mAh 3.7V lipo battery powers our contraption. For the credit card size version (not shown here), I use a battery from [PowerStream](http://www.powerstream.com/thin-lithium-ion.htm).
 
-#### [100uF Capacitor](http://amzn.to/1MAONOc)
+#### [100µF Capacitor](http://amzn.to/1MAONOc)
 Keep enough energy in this capacitor to provide the electromagnet with power when we need it, otherwise it will pull too much current and reset the microcontroller. This is the capacitor kit I use as it has all the standard values I'd need.
 
 #### [LED](http://amzn.to/1Hl3y8Z)
 To signal to us when we transmit information. I use this LED kit as it has a nice variety of LEDs.
 
-#### [100Ohm Resistor](http://amzn.to/1IeCMtP)
+#### [100Ω Resistor](http://amzn.to/1IeCMtP)
 Don't burn out the LED.
 
 #### [Momentary Switch](http://amzn.to/1Hl3R3T)
