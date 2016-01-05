@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3112,15 +3112,15 @@ Bigger is better as you'll get longer distance/more power (power is exponentiall
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="127" y1="101.6" x2="127" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="127" y1="104.14" x2="127" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="1-2EN"/>
 <wire x1="127" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PB4"/>
+<pinref part="U1" gate="A" pin="PB3"/>
+<wire x1="127" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="106.68" y1="101.6" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="101.6" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="127" y1="101.6" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
-<junction x="111.76" y="101.6"/>
+<wire x1="111.76" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="93.98" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
+<junction x="111.76" y="104.14"/>
 </segment>
 </net>
 <net name="N$7" class="0">
