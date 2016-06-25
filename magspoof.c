@@ -29,9 +29,8 @@
 #define TRACKS 2
 
 // consts get stored in flash as we don't adjust them
-const char* tracks[] = {
-"%B493173000682759^URISTA HDZ-IVAN JAVIER    ^150220100234000000?\0", // Track 1
-";493173000682759=15022100000234?\0" // Track 2
+"%B123456781234567^LASTNAME/FIRST^YYMMSSSDDDDDDDDDDDDDDDDDDDDDDDDD?\0", // Track 1
+";123456781234567=YYMMSSSDDDDDDDDDDDDDD?\0" // Track 2
 };
 
 char revTrack[41];
