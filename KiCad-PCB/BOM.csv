@@ -1,0 +1,12 @@
+Reference, Value, Footprint, Datasheet, Manufacturer, Temperatura, Alimentacion, Description
+IC1,ATTINY85-P,Housings_DIP:DIP-8_W7.62mm_LongPads,http://www.farnell.com/datasheets/1744708.pdf,ATMEL,+85/-40,5v,ATMEL 	ATTINY85-20PU  Microcontrolador 8 Bits, Baja Potencia, Alto Rendimiento, ATtiny, 20 MHz, 8 KB, 500 Byte, 8 Pines
+D1,LED,LEDs:LED-0805,,Maxim,+85/-40,5v,Led red 0805
+L1,Coil,Resistors_ThroughHole:Resistor_Horizontal_RM10mm,
+R1,330,Resistors_SMD:R_0603_HandSoldering,,,+85/-40,5v,Resistor 330ohms
+C1,100uF,theinventorhouse:1411(3528m)-B%2CM%2CH%2CT-TANTALUM,http://www.farnell.com/datasheets/1923743.pdf,Kemet,+85/-40,6.3v,KEMET 	T520T107M006ATE070  CAP, TANT, POLYMER, 100UF, 6.3V, 1411
+SW1,SW_PUSH,open-project:SW_PUSH_SMD,
+P2,AVR ICSP,Pin_Headers:Pin_Header_Straight_2x03,,Maxim,+85/-40,5v,
+P1,Battery,Pin_Headers:Pin_Header_Straight_1x02,
+C3,0.1uF,Capacitors_SMD:C_0603_HandSoldering,http://www.farnell.com/datasheets/2009679.pdf,WALSIN,+85/-40,50v,WALSIN 	0603F104Z500CT  CAP, MLCC, Y5V, 0.1UF, 50V, 0603, REEL
+U1,TC4424,Housings_DIP:DIP-8_W7.62mm_LongPads,http://www.farnell.com/datasheets/95980.pdf,Microchip,+85/-40,2.7-5v,MICROCHIP 	TC4424CPA  MOSFET Driver Lado Bajo, Alimentación:4.5-18V, Salida Pico:3A, Salida:3.5 Ohm, DIP-
+C2,100uF,theinventorhouse:1411(3528m)-B%2CM%2CH%2CT-TANTALUM,http://www.farnell.com/datasheets/1923743.pdf,Kemet,+85/-40,6.3v,KEMET 	T520T107M006ATE070  CAP, TANT, POLYMER, 100UF, 6.3V, 1411
