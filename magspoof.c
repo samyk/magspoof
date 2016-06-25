@@ -30,15 +30,15 @@
 
 // consts get stored in flash as we don't adjust them
 const char* tracks[] = {
-"%B123456781234567^LASTNAME/FIRST^YYMMSSSDDDDDDDDDDDDDDDDDDDDDDDDD?\0", // Track 1
-";123456781234567=YYMMSSSDDDDDDDDDDDDDD?\0" // Track 2
+"%B493173000682759^URISTA HDZ-IVAN JAVIER    ^150220100234000000?\0", // Track 1
+";493173000682759=15022100000234?\0" // Track 2
 };
 
 char revTrack[41];
 
-const int sublen[] = { 
+const int sublen[] = {
   32, 48, 48 };
-const int bitlen[] = { 
+const int bitlen[] = {
   7, 5, 5 };
 
 unsigned int curTrack = 0;
@@ -53,7 +53,7 @@ void setup()
 
   // blink to show we started up
   blink(ENABLE_PIN, 200, 3);
-  
+
   // store reverse track 2 to play later
   storeRevTrack(2);
 }
@@ -129,7 +129,7 @@ void playTrack(int track)
       tmp >>= 1;
     }
     playBit(crc);
-  } 
+  }
 
   // finish calculating and send last "byte" (LRC)
   tmp = lrc;
@@ -190,7 +190,7 @@ void storeRevTrack(int track)
     crc ?
       (revTrack[i] |= 1 << 4) :
       (revTrack[i] &= ~(1 << 4));
-  } 
+  }
 
   // finish calculating and send last "byte" (LRC)
   tmp = lrc;
@@ -236,12 +236,12 @@ void sleep()
 ISR(PCINT0_vect) {
   /*  noInterrupts();
    while (digitalRead(BUTTON_PIN) == LOW);
-   
+
    delay(50);
    while (digitalRead(BUTTON_PIN) == LOW);
-   playTrack(1 + (curTrack++ % 2)); 
+   playTrack(1 + (curTrack++ % 2));
    delay(400);
-   
+
    interrupts();*/
 
 }
@@ -258,12 +258,9 @@ void loop()
 
   delay(50);
   while (digitalRead(BUTTON_PIN) == LOW);
-  playTrack(1 + (curTrack++ % 2)); 
+  playTrack(1 + (curTrack++ % 2));
   delay(400);
 
   interrupts();
   //playTrack(1 + (curTrack++ % 2));
 }
-
-
-
