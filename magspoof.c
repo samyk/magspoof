@@ -29,6 +29,7 @@
 #define TRACKS 2
 
 // consts get stored in flash as we don't adjust them
+const char* tracks[] = {
 "%B123456781234567^LASTNAME/FIRST^YYMMSSSDDDDDDDDDDDDDDDDDDDDDDDDD?\0", // Track 1
 ";123456781234567=YYMMSSSDDDDDDDDDDDDDD?\0" // Track 2
 };
