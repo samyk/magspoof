@@ -135,7 +135,7 @@ Initiate the electromagnet.
 #### [Mini-Protoboard](http://amzn.to/1Hl3VQV)
 For soldering everything together.
 
-[![MagSpoof Schematic (DIP version)](http://samy.pl/magspoof/magdip-schematic.png)](http://samy.pl/magspoof/magdip-schematic.png)
+[![MagSpoof Schematic (DIP version)](https://raw.githubusercontent.com/samyk/magspoof/master/magspoof-schematic-dip.png)](https://raw.githubusercontent.com/samyk/magspoof/master/magspoof-schematic-dip.png)
 
 -----
 
