@@ -1,5 +1,5 @@
-Reference, Value, Footprint, Datasheet, Manufacturer, Temperatura, Alimentacion, Description
-IC1,ATTINY85-P,Housings_DIP:DIP-8_W7.62mm_LongPads,http://www.farnell.com/datasheets/1744708.pdf,ATMEL,+85/-40,5v,ATMEL 	ATTINY85-20PU  Microcontrolador 8 Bits, Baja Potencia, Alto Rendimiento, ATtiny, 20 MHz, 8 KB, 500 Byte, 8 Pines
+Reference, Value, Footprint, Datasheet, Manufacturer, Temperature, Feed, Description, Temperatura, Alimentacion, Descripción 
+IC1,ATTINY85-P,Housings_DIP:DIP-8_W7.62mm_LongPads,http://www.farnell.com/datasheets/1744708.pdf,ATMEL,+85*C/-40*C,5v,Low Power High Performance ATMEL ATTINY85-20PU Microcontroller 20MHZ 8 Bits 8 KB 512 Byte 8 Pin Dip Through hole, +85*C/-40*C,5V, Baja Potencia Alto Rendimiento ATtiny Microcontrolador 20 MHz 8 KB 512 Byte 8 pines zambullida través agujero
 D1,LED,LEDs:LED-0805,,Maxim,+85/-40,5v,Led red 0805
 L1,Coil,Resistors_ThroughHole:Resistor_Horizontal_RM10mm,
 R1,330,Resistors_SMD:R_0603_HandSoldering,,,+85/-40,5v,Resistor 330ohms
